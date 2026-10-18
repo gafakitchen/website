@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F7EEDB" />
+  <meta name="description" content="GAFA KITCHEN — katalog kue homemade dengan sistem pre-order. Jelajahi pilihan kue dan konsultasikan pesanan melalui WhatsApp." />
+  <title>GAFA KITCHEN | Manisnya Setiap Momen</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <div class="announcement">
+    <span class="announcement-sparkle" aria-hidden="true">✦</span>
+    Kue dibuat setelah pesanan dikonfirmasi · <a href="#cara-pesan">Kenali sistem pre-order kami <span aria-hidden="true">→</span></a>
+  </div>
+
+  <header class="site-header" id="atas">
+    <div class="container nav-wrap">
+      <a class="brand" href="#atas" aria-label="GAFA KITCHEN, kembali ke beranda">
+        <span class="brand-seal" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none"><path d="M10 29c6.2-1.2 6.5-9.4 12-9.4S28 27.8 34 29M13 29h18M17 33h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 10v6M18 12l2 4M26 12l-2 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-wordmark"><strong>GAFA</strong><small>K I T C H E N</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <a class="nav-link active" href="#beranda">Beranda</a>
+        <a class="nav-link" href="#katalog">Katalog</a>
+        <a class="nav-link" href="#cara-pesan">Cara Pesan</a>
+        <a class="nav-link" href="#tentang">Tentang Kami</a>
+      </nav>
+
+      <button type="button" class="button button-dark nav-order js-chat" data-context="general">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.3A8 8 0 1 1 20 11.5Z"/><path d="M9 9.5c.7 2 2 3.3 4.3 4.3l1.1-.8 1.6 1.4c-.4 1.2-1.4 1.6-2.4 1.3-3.5-1.1-5.4-3-6-6.2C7.3 8.5 8 8 8.5 8Z"/></svg>
+        Chat WhatsApp
+      </button>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileMenu" aria-label="Navigasi mobile" hidden>
+      <a href="#beranda">Beranda</a>
+      <a href="#katalog">Katalog Kue</a>
+      <a href="#cara-pesan">Cara Pemesanan</a>
+      <a href="#tentang">Tentang Kami</a>
+      <button type="button" class="button button-dark js-chat" data-context="general">Chat via WhatsApp <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-icon" aria-hidden="true">✳</span> SELAMAT DATANG DI GAFA KITCHEN</div>
+          <h1 id="hero-title">Kue homemade untuk <em>momen yang istimewa.</em></h1>
+          <p class="hero-desc">Dari keinginan kecil untuk sesuatu yang manis, hingga perayaan penuh cerita. Pilih kue favoritmu, lalu pesan dengan mudah melalui WhatsApp.</p>
+          <div class="hero-actions">
+            <a href="#katalog" class="button button-dark button-large">Jelajahi Katalog <span class="arrow" aria-hidden="true">↗</span></a>
+            <a href="#cara-pesan" class="text-link">Cara Pre-Order <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-highlights" aria-label="Keunggulan pengalaman memesan">
+            <div><span class="highlight-icon" aria-hidden="true">✦</span><span>Dibuat sesuai pesanan</span></div>
+            <div><span class="highlight-icon" aria-hidden="true">♡</span><span>Untuk momen spesial</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustrasi koleksi kue GAFA KITCHEN">
+          <div class="hero-halo"></div>
+          <div class="hero-picture">
+            <img src="assets/brownies.svg" alt="Ilustrasi potongan brownies cokelat pada piring" fetchpriority="high" />
+          </div>
+          <div class="hero-stamp" aria-hidden="true"><span>BAKED<br />WITH</span><strong>♡</strong><span>LOVE</span></div>
+          <div class="hero-note"><span class="note-dot" aria-hidden="true"></span><span><b>Made to order</b><small>Dibuat khusus setelah dipesan</small></span></div>
+          <span class="hero-star star-one" aria-hidden="true">✳</span>
+          <span class="hero-star star-two" aria-hidden="true">✳</span>
+          <span class="hero-curve" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Keunggulan layanan">
+      <div class="container benefits-grid">
+        <div class="benefit"><span class="benefit-icon" aria-hidden="true">✿</span><div><strong>Homemade Feel</strong><small>Hangat dan terasa personal</small></div></div>
+        <div class="benefit"><span class="benefit-icon" aria-hidden="true">◷</span><div><strong>Sistem Pre-Order</strong><small>Dibuat setelah konfirmasi</small></div></div>
+        <div class="benefit"><span class="benefit-icon" aria-hidden="true">♡</span><div><strong>Momen Lebih Manis</strong><small>Untuk diri sendiri & orang tersayang</small></div></div>
+      </div>
+    </section>
+
+    <section class="catalog section-pad" id="katalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-heading catalog-heading">
+          <div><span class="section-kicker">PILIH KESUKAANMU</span><h2 id="catalog-title">Katalog <em>Kue Kami</em></h2><p>Jelajahi pilihan kue untuk menemani setiap cerita manismu.</p></div>
+          <span class="catalog-decoration" aria-hidden="true">✳</span>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="category-filters" id="categoryFilters" aria-label="Filter kategori produk">
+            <button type="button" class="chip selected" data-category="Semua" aria-pressed="true">Semua Menu</button>
+            <button type="button" class="chip" data-category="Brownies" aria-pressed="false">Brownies</button>
+            <button type="button" class="chip" data-category="Cookies" aria-pressed="false">Cookies</button>
+            <button type="button" class="chip" data-category="Cake" aria-pressed="false">Cake & Bolu</button>
+            <button type="button" class="chip" data-category="Dessert" aria-pressed="false">Dessert</button>
+          </div>
+          <label class="search-field" for="productSearch">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"/><path d="m16 16 4.3 4.3"/></svg>
+            <input type="search" id="productSearch" placeholder="Cari kue favorit..." autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><div class="empty-icon">♡</div><h3>Kue belum ditemukan</h3><p>Coba gunakan kata kunci atau kategori yang lain.</p><button type="button" class="button button-outline" id="resetFilter">Tampilkan semua menu</button></div>
+        <p class="catalog-disclaimer">* Produk dan gambar saat ini merupakan contoh tampilan. Nama produk, foto asli, harga, dan varian dapat diperbarui sebelum website dipublikasikan.</p>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="cara-pesan" aria-labelledby="process-title">
+      <div class="container process-layout">
+        <div class="process-intro"><span class="section-kicker">SIMPLE & PERSONAL</span><h2 id="process-title">Pesan kue, <em>semudah itu.</em></h2><p>Tidak perlu keranjang belanja atau checkout. Pilih kue yang kamu suka, lalu ngobrol langsung dengan kami untuk mengatur pesanannya.</p><button type="button" class="button button-outline js-chat" data-context="general">Tanya via WhatsApp <span aria-hidden="true">↗</span></button></div>
+        <div class="steps" aria-label="Tahapan pemesanan">
+          <div class="step"><div class="step-number">01</div><div class="step-content"><h3>Pilih kue favoritmu</h3><p>Lihat katalog dan buka detail produk untuk mengetahui varian dan pilihan yang tersedia.</p></div><span class="step-symbol" aria-hidden="true">◈</span></div>
+          <div class="step"><div class="step-number">02</div><div class="step-content"><h3>Kirim pesanan via WhatsApp</h3><p>Isi jumlah, tanggal kebutuhan, serta catatan. Pesanmu akan disiapkan otomatis.</p></div><span class="step-symbol" aria-hidden="true">✉</span></div>
+          <div class="step"><div class="step-number">03</div><div class="step-content"><h3>Konfirmasi, lalu kami buat</h3><p>Diskusikan detail dan ketersediaan bersama admin. Kue dibuat setelah pesanan disepakati.</p></div><span class="step-symbol" aria-hidden="true">♡</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section-pad" id="tentang" aria-labelledby="story-title">
+      <div class="container story-layout">
+        <div class="story-art"><img src="assets/cupcakes.svg" alt="Ilustrasi cupcake dengan krim lembut" loading="eager"/><div class="story-art-label">little treats, big smiles <span>✿</span></div></div>
+        <div class="story-content"><span class="section-kicker">SEDIKIT TENTANG KAMI</span><h2 id="story-title">Ada cerita manis di <em>setiap gigitan.</em></h2><p>GAFA KITCHEN adalah ruang kecil untuk menghadirkan kue homemade yang menemani momen sehari-hari maupun perayaan spesial.</p><p>Kami menggunakan sistem pre-order agar setiap pesanan dapat dibicarakan lebih personal, mulai dari pilihan kue hingga tanggal yang kamu inginkan.</p><a href="#katalog" class="text-link story-link">Temukan kue favoritmu <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="kontak" aria-labelledby="cta-title">
+      <div class="container"><div class="cta-card"><span class="cta-sparkle cta-sparkle-one" aria-hidden="true">✳</span><span class="cta-sparkle cta-sparkle-two" aria-hidden="true">✦</span><div class="section-kicker">SWEET MOMENTS START HERE</div><h2 id="cta-title">Siap bikin harimu <em>lebih manis?</em></h2><p>Ceritakan kue yang kamu inginkan. Kami siap membantu proses pre-order lewat WhatsApp.</p><button type="button" class="button button-cream js-chat" data-context="general"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.3A8 8 0 1 1 20 11.5Z"/><path d="M9 9.5c.7 2 2 3.3 4.3 4.3l1.1-.8 1.6 1.4c-.4 1.2-1.4 1.6-2.4 1.3-3.5-1.1-5.4-3-6-6.2C7.3 8.5 8 8 8.5 8Z"/></svg> Chat GAFA KITCHEN</button></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-layout"><div class="footer-left"><a class="brand footer-brand" href="#atas"><span class="brand-seal" aria-hidden="true">✿</span><span class="brand-wordmark"><strong>GAFA</strong><small>K I T C H E N</small></span></a><p>Manisnya setiap momen.<br />Homemade cakes, made to order.</p></div><div class="footer-right"><div><strong>Jelajahi</strong><a href="#beranda">Beranda</a><a href="#katalog">Katalog Kue</a><a href="#cara-pesan">Cara Pesan</a></div><div><strong>Hubungi</strong><a href="#kontak">Pesan Kue</a><a href="#tentang">Tentang Kami</a><button type="button" class="footer-link js-chat" data-context="general">WhatsApp</button></div></div></div><div class="container footer-bottom"><span>© <span id="currentYear"></span> GAFA KITCHEN. All rights reserved.</span><span>Made with ♡ for sweet moments</span></div></footer>
+
+  <button type="button" class="floating-wa js-chat" data-context="general" aria-label="Chat GAFA KITCHEN via WhatsApp" title="Chat via WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.1L4 20l1.4-4.3A8 8 0 1 1 20 11.5Z"/><path d="M9 9.5c.7 2 3 3.8 4.3 4.3l1.1-.8 1.6 1.4c-.4 1.2-1.4 1.6-2.4 1.3-3.5-1.1-5.4-3-6-6.2C7.3 8.5 8 8 8.5 8Z"/></svg><span class="floating-label">Chat Kami</span></button>
+
+  <dialog class="product-dialog" id="productDialog" aria-labelledby="dialogTitle"><button type="button" class="dialog-close" id="closeDialog" aria-label="Tutup detail produk">×</button><div class="dialog-layout"><div class="dialog-image-wrap"><img id="dialogImage" src="assets/brownies.svg" alt="" /></div><div class="dialog-copy"><span class="section-kicker" id="dialogCategory">PRE-ORDER</span><h2 id="dialogTitle">Nama Produk</h2><p id="dialogDescription"></p><span class="dialog-price">Harga dikonfirmasi via WhatsApp</span><form id="orderForm"><input type="hidden" id="orderProductId" /><div class="field-row"><label for="orderVariant">Pilihan varian / ukuran<select id="orderVariant" required></select></label><label for="orderQuantity">Jumlah<input id="orderQuantity" type="number" min="1" max="99" value="1" required /></label></div><label for="orderDate">Tanggal dibutuhkan <span class="optional">(opsional)</span><input id="orderDate" type="date" /></label><label for="orderNotes">Catatan pesanan <span class="optional">(opsional)</span><textarea id="orderNotes" rows="2" placeholder="Contoh: tulisan di kue, detail dekorasi, dll."></textarea></label><p class="form-hint">Pesanan belum otomatis dikonfirmasi. Admin akan membahas ketersediaan dan detail pesanan melalui WhatsApp.</p><button type="submit" class="button button-dark full-width">Lanjut ke WhatsApp <span aria-hidden="true">↗</span></button></form></div></div></dialog>
+
+  <dialog class="setup-dialog" id="setupDialog" aria-labelledby="setupTitle"><button type="button" class="dialog-close" id="closeSetup" aria-label="Tutup pemberitahuan">×</button><div class="setup-content"><div class="setup-icon" aria-hidden="true">✉</div><h2 id="setupTitle">WhatsApp toko belum diatur</h2><p>Website demo ini sudah menyiapkan pesan pre-order. Untuk mengaktifkan tombol chat ke GAFA KITCHEN, isi nomor WhatsApp di bagian <code>WHATSAPP_NUMBER</code> pada file <code>script.js</code>.</p><div class="message-preview" id="messagePreview"></div><button type="button" class="button button-dark full-width" id="copyOrderMessage">Salin pesan pre-order</button><span class="setup-footnote">Contoh format nomor: 6281234567890 (tanpa + atau angka 0 di depan).</span></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
