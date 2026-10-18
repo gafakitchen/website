@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="700" viewBox="0 0 840 700" role="img" aria-label="Ilustrasi Mini Cupcakes">
+<title>Mini Cupcakes</title><defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F4E6DF"/><stop offset="1" stop-color="#DDBEAF"/></linearGradient>
+ <linearGradient id="plate" x1="0" y1="0" x2="0.5" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#e7d8c6"/></linearGradient>
+ <linearGradient id="choc" x1="0" y1="0" x2="0.6" y2="1"><stop stop-color="#75452e"/><stop offset=".52" stop-color="#4c2b20"/><stop offset="1" stop-color="#2e1b19"/></linearGradient>
+ <linearGradient id="choc-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#805139"/><stop offset=".5" stop-color="#5c3429"/><stop offset="1" stop-color="#402621"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6d18b"/><stop offset=".55" stop-color="#d39d5e"/><stop offset="1" stop-color="#b77f45"/></linearGradient>
+ <linearGradient id="cream" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4e3"/><stop offset="1" stop-color="#ddbd9f"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff" stop-opacity=".45"/><stop offset=".6" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient>
+ <filter id="drop" x="-50%" y="-60%" width="200%" height="220%"><feGaussianBlur stdDeviation="15"/></filter>
+ <filter id="itemdrop" x="-30%" y="-35%" width="160%" height="180%"><feDropShadow dx="4" dy="16" stdDeviation="13" flood-color="#603d2a" flood-opacity=".2"/></filter>
+ </defs><rect width="840" height="700" fill="url(#bg)"/>
+    <path d="M-25 560C185 470 215 670 450 614s270-56 440 10" fill="none" stroke="#fff6e9" stroke-opacity=".38" stroke-width="3"/>
+    <circle cx="721" cy="115" r="105" fill="#fff8ee" fill-opacity=".15"/><circle cx="90" cy="115" r="40" fill="#fffaf4" fill-opacity=".17"/>
+    <path d="M89 64l13 20-13 20-13-20Z M721 565l12 16-12 16-12-16Z" fill="#fff8eb" fill-opacity=".55"/><ellipse cx="427" cy="478" rx="316" ry="159" fill="#5b3927" opacity=".15" filter="url(#drop)"/>
+    <ellipse cx="420" cy="390" rx="324" ry="216" fill="url(#plate)" stroke="#fff5e8" stroke-width="7"/>
+    <ellipse cx="420" cy="385" rx="290" ry="186" fill="none" stroke="#e6d2ba" stroke-width="5" opacity=".6"/><g transform="translate(290 306) scale(0.82)" filter="url(#itemdrop)">
+      <path d="M-95 13L-72 162Q0 193 73 162L96 13Z" fill="#c58a5a" stroke="#a96c45" stroke-width="5"/>
+      <path d="M-75 25l19 132M-35 26l5 144M5 27v143M45 27L34 157M73 24l-18 133" stroke="#efc28d" stroke-opacity=".8" stroke-width="6"/>
+      <path d="M-105 16Q-124-21-87-43Q-91-77-46-89Q-47-119 0-124Q45-120 46-89Q95-83 89-46Q132-23 104 17Z" fill="url(#cream)" stroke="#e6c2a8" stroke-width="7"/>
+      <path d="M-83-30Q-19-73 63-32M-58-73Q0-100 53-70M-50 3Q0-15 54 2" stroke="#fff9ea" stroke-width="17" stroke-linecap="round" fill="none" opacity=".8"/>
+      <circle cx="0" cy="-125" r="21" fill="#a44845"/><circle cx="-7" cy="-132" r="6" fill="#e1aaa3" opacity=".8"/>
+      </g><g transform="translate(556 319) scale(0.78)" filter="url(#itemdrop)">
+      <path d="M-95 13L-72 162Q0 193 73 162L96 13Z" fill="#c58a5a" stroke="#a96c45" stroke-width="5"/>
+      <path d="M-75 25l19 132M-35 26l5 144M5 27v143M45 27L34 157M73 24l-18 133" stroke="#efc28d" stroke-opacity=".8" stroke-width="6"/>
+      <path d="M-105 16Q-124-21-87-43Q-91-77-46-89Q-47-119 0-124Q45-120 46-89Q95-83 89-46Q132-23 104 17Z" fill="url(#cream)" stroke="#e6c2a8" stroke-width="7"/>
+      <path d="M-83-30Q-19-73 63-32M-58-73Q0-100 53-70M-50 3Q0-15 54 2" stroke="#fff9ea" stroke-width="17" stroke-linecap="round" fill="none" opacity=".8"/>
+      <circle cx="0" cy="-125" r="21" fill="#a44845"/><circle cx="-7" cy="-132" r="6" fill="#e1aaa3" opacity=".8"/>
+      </g><g transform="translate(414 392) scale(0.98)" filter="url(#itemdrop)">
+      <path d="M-95 13L-72 162Q0 193 73 162L96 13Z" fill="#c58a5a" stroke="#a96c45" stroke-width="5"/>
+      <path d="M-75 25l19 132M-35 26l5 144M5 27v143M45 27L34 157M73 24l-18 133" stroke="#efc28d" stroke-opacity=".8" stroke-width="6"/>
+      <path d="M-105 16Q-124-21-87-43Q-91-77-46-89Q-47-119 0-124Q45-120 46-89Q95-83 89-46Q132-23 104 17Z" fill="url(#cream)" stroke="#e6c2a8" stroke-width="7"/>
+      <path d="M-83-30Q-19-73 63-32M-58-73Q0-100 53-70M-50 3Q0-15 54 2" stroke="#fff9ea" stroke-width="17" stroke-linecap="round" fill="none" opacity=".8"/>
+      <circle cx="0" cy="-125" r="21" fill="#a44845"/><circle cx="-7" cy="-132" r="6" fill="#e1aaa3" opacity=".8"/>
+      </g></svg>
