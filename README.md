@@ -1,64 +1,33 @@
-# GAFA KITCHEN — Website Katalog Pre-Order
+# GAFA KITCHEN — v5 (Katalog Satuan & Pesanan Custom)
 
-Website statis responsif menggunakan HTML, CSS, dan JavaScript vanilla. Tanpa sistem keranjang belanja atau checkout. Pesanan disiapkan sebagai pesan WhatsApp dan baru berlaku setelah dikonfirmasi oleh admin.
+Website statis HTML + CSS + JavaScript, cocok untuk GitHub Pages, Netlify, dan Cloudflare Pages.
 
-## Cara membuka
+## Katalog produk satuan — harga tampil
+- Soes Buah: Rp12.000 / pcs
+- Éclair Cokelat: Rp12.000 / pcs
+- Soes Cokelat: Rp13.000 / pcs
+- Klapertart: Rp17.000 / cup
+- Lemper Panggang: Rp8.000 / pcs
 
-1. Ekstrak ZIP jika perlu.
-2. Buka `index.html` menggunakan browser (Chrome, Edge, Firefox, Safari).
-3. Seluruh gambar ilustrasi utama dan produk tersimpan lokal di folder `assets/`, sehingga katalog tetap terlihat tanpa internet. Font Google opsional dan membutuhkan internet; browser memiliki font cadangan.
+## Pesanan khusus — harga hanya via WhatsApp
+- Paket 3 Produk (isi 3 produk, detail dan harga dikonfirmasi lewat chat)
+- Hampers & Gift Box
+- Ulang Tahun & Perayaan
+- Acara & Gathering
 
-## WAJIB sebelum dipublikasikan
+Kartu Paket 3 Produk dipindahkan dari katalog utama ke bagian **Pesanan Khusus** di bawah katalog; tidak ada informasi harga paket tetap di website. Semua paket ditangani sebagai pesanan berdasarkan permintaan dan ketersediaan. Foto paket hanya referensi hasil digital.
 
-**Nomor WhatsApp** — buka `script.js`, cari:
+Nomor WhatsApp: +62 812-1150-8109. Seluruh tombol konsultasi membuat pesan sesuai konteks layanan, tanpa checkout dan tanpa pengumpulan data pelanggan di website.
 
-```js
-const WHATSAPP_NUMBER = "";
-```
+## Memperbarui hosting
+1. Scan file ZIP menggunakan antivirus lokal; jika ada peringatan, **jangan abaikan atau whitelist**.
+2. Ekstrak ZIP, upload seluruh isi folder (termasuk assets/) ke root GitHub repo, lalu commit.
+3. GitHub Pages dan Cloudflare Pages Git integration akan membangun/publish versi terbaru.
+4. Netlify yang digunakan dengan drag & drop perlu deploy ulang folder secara manual.
 
-Isi nomor toko dalam format internasional hanya berupa angka. Contoh nomor **fiktif**, bukan nomor toko:
-
-```js
-const WHATSAPP_NUMBER = "6281234567890";
-```
-
-Contoh di atas memakai kode Indonesia `62`; sesuaikan kode negara dengan nomor sebenarnya. Tombol pesan akan membuka `https://wa.me/NOMOR?text=...`. Jika nomor masih kosong, website menampilkan pesan yang bisa disalin sebagai mode demo.
-
-**Katalog** — edit array `PRODUCTS` dalam `script.js`. Keenam produk yang disertakan hanyalah **contoh**, bukan inventaris resmi GAFA KITCHEN. Ganti nama, kategori, deskripsi, pilihan varian, dan gambar sesuai produk sebenarnya. Saat ini harga tertulis *Tanya via WhatsApp* karena daftar harga belum diberikan.
-
-**Foto** — gambar di `assets/` adalah ilustrasi SVG lokal buatan untuk mockup. Sebelum peluncuran, sangat disarankan menggantinya dengan foto asli kue (WebP/JPG); ubah nilai `image` pada produk dan foto di bagian hero serta Tentang Kami pada `index.html`. Sesuaikan teks alternatif `alt`.
-
-**Data bisnis** — ubah copywriting dan ketentuan pre-order sesuai praktik nyata. Jangan menambahkan klaim tentang sertifikasi, halal, ketersediaan, atau bahan tanpa verifikasi.
-
-## Fitur yang sudah berjalan
-
-- Navigasi responsif desktop/mobile, menu hamburger
-- Hero banner, keunggulan, katalog, cara pemesanan, tentang, CTA WhatsApp, footer
-- Filter kategori dan pencarian produk secara langsung
-- Modal detail produk dengan pilihan varian, jumlah, tanggal kebutuhan, catatan
-- Pesan WhatsApp otomatis yang berisi detail kue yang dipilih
-- Mode demo saat WhatsApp belum diisi, dengan opsi salin pesan
-- Tidak ada checkout atau transaksi pembayaran online
-- Aksesibilitas dasar: HTML semantik, label formulir, keyboard focus, dialog native, reduced motion
-
-## Struktur folder
-
-```text
-gafa-kitchen-website/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── assets/
-    ├── favicon.svg
-    ├── brownies.svg
-    ├── cookies.svg
-    ├── banana-cake.svg
-    ├── dessert-box.svg
-    ├── marble-cake.svg
-    └── cupcakes.svg
-```
-
-## Palet
-
-Cream `#F7EEDB`, Chocolate `#5C3A21`, Caramel `#C98A4A`, Warm White `#FFF9F2`, Soft Beige `#EBDCC8`, Dark Cocoa `#3D2618`.
+## Keamanan
+- Tidak menggunakan library JS eksternal, Google Fonts, tracker, API, atau proses build.
+- Tidak ada operasi jaringan otomatis; navigasi keluar hanya ke `wa.me` setelah pelanggan memilih tombol.
+- JavaScript membangun kartu produk memakai DOM node/textContent; tidak memakai dynamic `innerHTML`.
+- CSP membatasi JavaScript, CSS, gambar ke origin sendiri.
+- **Audit statis dan uji browser bukan sertifikasi antivirus**; Microsoft Defender tidak tersedia untuk pemindaian di lingkungan ini.
