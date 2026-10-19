@@ -1,4 +1,4 @@
-# GAFA KITCHEN — v5 (Katalog Satuan & Pesanan Custom)
+# GAFA KITCHEN — v5 (Katalog Satuan & Pesanan Custom Web)
 
 Website statis HTML + CSS + JavaScript, cocok untuk GitHub Pages, Netlify, dan Cloudflare Pages.
 
